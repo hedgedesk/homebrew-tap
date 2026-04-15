@@ -1,26 +1,26 @@
 class Canon < Formula
   desc "Universal symbolic graph compiler for machine reasoning over software structure"
   homepage "https://github.com/hedgedesk/canon-releases"
-  version "1.2.2"
+  version "1.2.3"
   license "Proprietary"
 
   on_macos do
     if Hardware::CPU.arm?
       url "https://github.com/hedgedesk/canon-releases/releases/download/v#{version}/canon-darwin-arm64"
-      sha256 "9e9dbb96b09fe21dac28c26a1c7e1d48ee60ef228a544e520e165c87e3db0d34"
+      sha256 "51bf5ef87852ee945ed9e773071563a88a7411bb50f99e3bb0fdc50530d6d3ff"
     else
       url "https://github.com/hedgedesk/canon-releases/releases/download/v#{version}/canon-darwin-amd64"
-      sha256 "42b195db54292210dca021a14393aac76b5525ef2f320dc042237891ce4481b8"
+      sha256 "30fd68a19daefbe47444ec1c8f2eacef800afef19ccb13baae711e7a3580cab7"
     end
   end
 
   on_linux do
     if Hardware::CPU.arm?
       url "https://github.com/hedgedesk/canon-releases/releases/download/v#{version}/canon-linux-arm64"
-      sha256 "f7d71b8c9649fe00cf07d34757bf07f62bbe2c93b8f136f5b4ff72a47983dc80"
+      sha256 "a40d28f0cf13b83736bc441489f491e69a14a3a185f4ddb3357ab60263e4b19a"
     else
       url "https://github.com/hedgedesk/canon-releases/releases/download/v#{version}/canon-linux-amd64"
-      sha256 "6e99284b1d01fbcfb0caa04707a6a0e51d7be8b4fb2472ea357ba9ba84fd6bee"
+      sha256 "5171e18a27da51ea05ac7fbc1d5be991662165f33c7279f6833075f23a3f25e4"
     end
   end
 
